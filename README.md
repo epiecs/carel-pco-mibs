@@ -20,9 +20,9 @@ Afterwards you need to open the `configuration -> snmp page`. There you will see
 
 Use the following values:
 
-System OID | Enterprise OID
-- | -
-1.3.6.1.4.1.9839.2606.1 | 9839.2606
+| System OID              	| Enterprise OID 	|
+|-------------------------	|----------------	|
+| 1.3.6.1.4.1.9839.2606.1 	| 9839.2606      	|
 
 ## Using this mib
 
