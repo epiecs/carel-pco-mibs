@@ -2,7 +2,7 @@
 
 The [Carel pCOWeb card](https://www.carel.com/bms-building-management-system-na/-/journal_content/56_INSTANCE_i4q5KIMLInKK/10191/55239) is a device that allows you to connect datacenter HVAC devices to your network and poll them via SNMP. 
 
-The he pCOWeb card is vendor agnostic. When viewing the oid tree all values are provided under vendor id 9839 (Carel). This can be modified to be replaced with another vendor id if a MIB is available.
+The pCOWeb card is vendor agnostic. When viewing the oid tree all values are provided under vendor id 9839 (Carel). This can be modified to be replaced with another vendor id if a MIB is available.
 
 Rittal however has not provided a MIB for their [LCP DX product family](https://www.rittal.com/de-de/products/PG0800ITINFRA1/PGR1951ITINFRA1/PG1023ITINFRA1/PRO34169?variantId=3311410). This is problematic when trying to read/monitor values. 
 
