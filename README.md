@@ -1,6 +1,6 @@
 # Carel pCOWeb mibs
 
-The [Carel pCOWeb card](https://www.carel.com/bms-building-management-system-na/-/journal_content/56_INSTANCE_i4q5KIMLInKK/10191/55239) is a device that allows you to connect datacenter HVAC devices to your network and poll them via SNMP. 
+The [Carel pCOWeb card](https://www.carel.com/bms-building-management-system-na/-/journal_content/56_INSTANCE_i4q5KIMLInKK/10191/55239) ([documentation](https://www.carel.com/documents/10191/0/%2B030220471/9619472f-f1c0-4ec9-a151-120aaa5e479a?version=1.0)) is a device that allows you to connect datacenter HVAC devices to your network and poll them via SNMP. 
 
 The pCOWeb card is vendor agnostic. When viewing the oid tree all values are provided under vendor id 9839 (Carel). This can be modified to be replaced with another vendor id if a MIB is available.
 
