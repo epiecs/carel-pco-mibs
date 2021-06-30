@@ -24,6 +24,8 @@ Use the following values:
 |-------------------------	|----------------	|
 | 1.3.6.1.4.1.9839.2606.1 	| 9839.2606      	|
 
+The OID tree is now presented as the standard carel OID tree `1.3.6.1.4.1.9839` with a subtree for rittal `2606` and then the values. (`Carel / Rittal / Values`).
+
 ## Using this mib
 
 First of all you can use your favourite mib viewer/browser. Make sure that it includes the following MIBs: *SNMPv2-SMI, SNMPv2-CONF, SNMPv2-TC*. If they are not included you'll have to download them yourself and place them in the appropriate directory of your software.
