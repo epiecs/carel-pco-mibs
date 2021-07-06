@@ -133,7 +133,7 @@ Use this table to reference the error 'currentErrorCode' codes. Consult the Ritt
 | 12    	| ALA12      	| Probe B12 faulty or disconnected                     	|
 | 13    	| ALB01      	| High pressure                                        	|
 | 14    	| ALB02      	| High pressure compressor 1 by transducer             	|
-| 15    	| ALB03      	| Low pressure compressor/compressors by transducer    	|
+| 15    	| ALB03      	| Low pressure compressor/compressors by transducer    	|
 | 16    	| ALC01      	| Compressor 1 overload or inverter alarm              	|
 | 17    	| ALC03      	| Envelope alarm zone                                  	|
 | 18    	| ALC04      	| Compressor start failure                             	|
