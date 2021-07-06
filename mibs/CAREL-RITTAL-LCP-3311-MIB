@@ -479,7 +479,6 @@ currentErrorCode                OBJECT-TYPE
 		ALL02 (31),
 		ALL99 (32),
 		ALW04 (33)
-
 	}
 	MAX-ACCESS	read-only
 	STATUS		current

@@ -83,7 +83,7 @@ CAREL-RITTAL-LCP-3311-MIB::inputTemperatureAverage.0 = INTEGER: 31.3 C
 | reboot                                   	| digital 	| read-write 	| .1.3.6.1.4.1.9839.2606.2.1.1.100 	|       	| Reboot the system: no (0), yes (1)                                                                                                                                                                                                                  	|
 | compressorRotorSpeedHz                   	| integer 	| read-only  	| .1.3.6.1.4.1.9839.2606.2.1.3.1   	| Hz    	| Compressor rotor speed in Hz                                                                                                                                                                                                                        	|
 | driverPowerStatus                        	| integer 	| read-only  	| .1.3.6.1.4.1.9839.2606.2.1.3.2   	|       	| Driver power status stop (1), run (2), alarm (3)                                                                                                                                                                                                    	|
-| currentErrorCode                         	| integer 	| read-only  	| .1.3.6.1.4.1.9839.2606.2.1.3.3   	|       	| Current error code                                                                                                                                                                                                                                  	|
+| currentErrorCode                         	| integer 	| read-only  	| .1.3.6.1.4.1.9839.2606.2.1.3.3   	|       	| Current error code, see table below                                                                                                                                                                                                                                  	|
 | driverTemperature                        	| integer 	| read-only  	| .1.3.6.1.4.1.9839.2606.2.1.3.4   	| C     	| Driver Power+ Temperature                                                                                                                                                                                                                           	|
 | dcBusVoltage                             	| integer 	| read-only  	| .1.3.6.1.4.1.9839.2606.2.1.3.5   	| V     	| Power+ DC Voltage                                                                                                                                                                                                                                   	|
 | motorVoltage                             	| integer 	| read-only  	| .1.3.6.1.4.1.9839.2606.2.1.3.6   	| V     	| Motor Voltage                                                                                                                                                                                                                                       	|
@@ -112,6 +112,46 @@ CAREL-RITTAL-LCP-3311-MIB::inputTemperatureAverage.0 = INTEGER: 31.3 C
 | compressorRotorSpeed                     	| analog  	| read-only  	| .1.3.6.1.4.1.9839.2606.2.1.2.45  	| rps   	| Compressor rotor speed                                                                                                                                                                                                                              	|
 | compressorMotorCurrent                   	| analog  	| read-only  	| .1.3.6.1.4.1.9839.2606.2.1.2.46  	| A     	| Compressor motor current                                                                                                                                                                                                                            	|
 | lcpSetpoint                              	| analog  	| read-write 	| .1.3.6.1.4.1.9839.2606.2.1.2.48  	| C     	| Main LCP setpoint                                                                                                                                                                                                                                   	|
+
+## Error codes
+
+Use this table to reference the error 'currentErrorCode' codes. Consult the Rittal [documentation](https://www.rittal.com/de-de/products/PG0800ITINFRA1/PGR1951ITINFRA1/PG1023ITINFRA1/PRO34169?variantId=3311410) starting on page 45
+
+| Value 	| Alarm code 	| Description                                          	|
+|-------	|------------	|------------------------------------------------------	|
+| 0     	| OK         	| OK                                                   	|
+| 2     	| ALA02      	| Probe B2 faulty or disconnected                      	|
+| 3     	| ALA03      	| Probe B3 faulty or disconnected                      	|
+| 4     	| ALA04      	| Probe B4 faulty or disconnected                      	|
+| 5     	| ALA05      	| Probe B5 faulty or disconnected                      	|
+| 6     	| ALA06      	| Probe B6 faulty or disconnected                      	|
+| 7     	| ALA07      	| Probe B7 faulty or disconnected                      	|
+| 8     	| ALA08      	| Probe B8 faulty or disconnected                      	|
+| 9     	| ALA09      	| Probe B9 faulty or disconnected                      	|
+| 10    	| ALA10      	| Probe B10 faulty or disconnected                     	|
+| 11    	| ALA11      	| Probe B11 faulty or disconnected                     	|
+| 12    	| ALA12      	| Probe B12 faulty or disconnected                     	|
+| 13    	| ALB01      	| High pressure                                        	|
+| 14    	| ALB02      	| High pressure compressor 1 by transducer             	|
+| 15    	| ALB03      	| Low pressure compressor/compressors by transducer    	|
+| 16    	| ALC01      	| Compressor 1 overload or inverter alarm              	|
+| 17    	| ALC03      	| Envelope alarm zone                                  	|
+| 18    	| ALC04      	| Compressor start failure                             	|
+| 19    	| ALC05      	| High discharge gas temperature                       	|
+| 20    	| ALC06      	| Low pressure differential (insufficient lubrication) 	|
+| 21    	| ALF01      	| Fan overload                                         	|
+| 22    	| ALD02      	| Sensor failure                                       	|
+| 23    	| ALD03      	| EEV motor error                                      	|
+| 24    	| ALD04      	| Low superheat                                        	|
+| 25    	| ALD05      	| Low suction temperature                              	|
+| 26    	| ALD06      	| Low evaporation temperature                          	|
+| 27    	| ALD07      	| High evaporation temperature                         	|
+| 28    	| ALD08      	| High condensing temperature                          	|
+| 29    	| ALD09      	| Driver offline                                       	|
+| 30    	| ALL01      	| Power+ offline                                       	|
+| 31    	| ALL02      	| Power+ Generic Alarm                                 	|
+| 32    	| ALL99      	| Unexpected inverter stop                             	|
+| 33    	| ALW04      	| Max temperature (warning)                            	|
 
 ## Tags
 * SK 3311.410-440
